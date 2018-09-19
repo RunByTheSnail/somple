@@ -2,7 +2,11 @@ package tk.mybatis.simple.model;
 
 import java.util.Date;
 
+/**
+ * 用户表
+ */
 public class SysUser {
+
     //用户id
     private Long id;
 
@@ -21,7 +25,7 @@ public class SysUser {
     //头像
     private byte[] headImg;
 
-    //
+    //创建时间
     private Date createTime;
 
     public Long getId() {
