@@ -12,6 +12,7 @@
     </resultMap>
     <select id="selectById" resultMap="userMap">
         select
+          id,
           user_name,
           user_password,
           user_email,
@@ -22,6 +23,7 @@
     </select>
     <select id="selectAll" resultType="tk.mybatis.simple.model.SysUser">
         select
+          id,
           user_name,
           user_password,
           user_email,
@@ -45,4 +47,34 @@
         where
         u.id = #{userId}
     </select>
+    <insert id="inset">
+        insert into sys_user(
+          user_name, user_password, user_email,
+          user_info, head_img, create_time)
+        values (
+          #{userName}, #{userPassword}, #{userEmail},
+          #{userInfo}, #{headImg, jdbcType=BLOB}, #{createTime, jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="inset2" useGeneratedKeys="true" keyProperty="id">
+        insert into sys_user(
+          user_name, user_password, user_email,
+          user_info, head_img, create_time)
+        values (
+          #{userName}, #{userPassword}, #{userEmail},
+          #{userInfo}, #{headImg, jdbcType=BLOB}, #{createTime, jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="inset3">
+        insert into sys_user(
+          user_name, user_password, user_email,
+          user_info, head_img, create_time)
+        values (
+          #{userName}, #{userPassword}, #{userEmail},
+          #{userInfo}, #{headImg, jdbcType=BLOB}, #{createTime, jdbcType=TIMESTAMP}
+        )
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
 </mapper>
