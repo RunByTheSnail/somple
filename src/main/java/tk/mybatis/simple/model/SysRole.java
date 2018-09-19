@@ -22,6 +22,16 @@ public class SysRole {
     //创建时间
     private Date createTime;
 
+    private SysUser sysUser;
+
+    public SysUser getSysUser() {
+        return sysUser;
+    }
+
+    public void setSysUser(SysUser sysUser) {
+        this.sysUser = sysUser;
+    }
+
     public Long getId() {
         return id;
     }
