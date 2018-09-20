@@ -119,7 +119,9 @@ public class UserMapperTest extends BaseMapperTest {
             sqlSession.close();
         }
 
-    }    @Test
+    }
+
+    @Test
     public void testInsert3() {
         try {
             UserMapper mapper = sqlSession.getMapper(UserMapper.class);
@@ -146,5 +148,64 @@ public class UserMapperTest extends BaseMapperTest {
             sqlSession.close();
         }
 
+    }
+
+    @Test
+    public void testUpdateById() {
+        try {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            //从数据库查询一个user对象
+            SysUser user = mapper.selectById(1L);
+            //当前userName为"admin"
+            Assert.assertEquals("admin", user.getUserName());
+            //修改用户名
+            user.setUserName("admin_test");
+            //修改邮箱
+            user.setUserEmail("test@mybatis.tk");
+            int result = mapper.updateById(user);
+            //只更新1条数据
+            Assert.assertEquals(1, result);
+            user = mapper.selectById(1L);
+            //修改后的名字是admin_test
+            Assert.assertEquals("admin_test", user.getUserName());
+        } finally {
+            //为了不影响测试，这里选择回滚
+            //由于默认的sqlSessionFactory.openSession()是不自动提交的
+            //因此不手动执行 commit 也不会提交到数据库
+            sqlSession.rollback();
+            //不要忘记关闭sqlSession
+            sqlSession.close();
+        }
+    }
+
+    @Test
+    public void testDeleteById() {
+        try{
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            //从数据库查询1个user对象，根据id=1查询
+            SysUser user1 = userMapper.selectById(1L);
+            //现在还能查询出user对象
+            Assert.assertNotNull(user1);
+            //调用方法删除
+            Assert.assertEquals(1, userMapper.deleteById(1L));
+            //再次查询，这时应该没有值为null
+            Assert .assertNull(userMapper.selectById(1L));
+            //使用 SysUser 参数再进行一次测试，根据 id = 1001 查询
+            SysUser user2 = userMapper.selectById(1001L);
+            //现在还能查询出 user 对象
+            Assert.assertNotNull(user2);
+            //调用方法删除，注意这里使用参数user2
+            Assert.assertEquals(1, userMapper.deleteById(user2));
+            //再次查询，这时应该没有值为null
+            Assert.assertNull(userMapper.selectById(1001L));
+            // 使用 SysUser 参数再进行一次测试
+        } finally {
+            //为了不影响测试，这里选择回滚
+            //由于默认的sqlSessionFactory.openSession()是不自动提交的
+            //因此不手动执行 commit 也不会提交到数据库
+            sqlSession.rollback();
+            //不要忘记关闭sqlSession
+            sqlSession.close();
+        }
     }
 }

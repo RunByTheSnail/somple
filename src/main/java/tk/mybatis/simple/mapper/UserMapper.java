@@ -45,4 +45,25 @@ public interface UserMapper {
      * @return int
      */
     int inset3(SysUser user);
+
+    /**
+     * 根据id更新用户
+     * @param sysUser 用户id
+     * @return 1
+     */
+    int updateById(SysUser sysUser);
+
+    /**
+     * 通过主键删除
+     * @param id 主键id
+     * @return 1
+     */
+    int deleteById(Long id);
+
+    /**
+     * 通过主键删除
+     * @param id 主键id
+     * @return 1
+     */
+    int deleteById(SysUser sysUser);
 }

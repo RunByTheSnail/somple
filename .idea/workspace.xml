@@ -43,16 +43,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
-          <entry key="java" value="1803" />
-          <entry key="xml" value="1118" />
+          <entry key="java" value="2359" />
+          <entry key="xml" value="1467" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1803" />
+          <entry key="JAVA" value="2359" />
           <entry key="PLAIN_TEXT" value="26" />
-          <entry key="SQL" value="41" />
-          <entry key="XML" value="1077" />
+          <entry key="SQL" value="54" />
+          <entry key="XML" value="1413" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -94,36 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/BaseMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+            <state relative-caret-position="-3">
+              <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,10 +106,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="201" column="19" lean-forward="true" selection-start-line="201" selection-start-column="19" selection-end-line="201" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+            <state relative-caret-position="197">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -182,9 +168,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/CountryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/CountryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/model/SysRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapperTest.java" />
       </list>
     </option>
   </component>
@@ -371,7 +357,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Library/code/demo/somple/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537365899197" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537412266813" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -396,7 +382,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testInsert3">
+  <component name="RunManager" selected="JUnit.UserMapperTest.testDeleteById">
+    <configuration name="UserMapperTest.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="somple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tk.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserMapperTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="somple" />
       <extension name="coverage">
@@ -445,7 +447,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserMapperTest.testUpdateById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="somple" />
       <extension name="coverage">
         <pattern>
@@ -455,42 +457,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
       <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testSelectAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.testSelectRoleByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="somple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tk.mybatis.simple.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
-      <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testSelectRoleByUserId" />
+      <option name="METHOD_NAME" value="testUpdateById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserMapperTest.testSelectRoleByUserId" />
       <item itemvalue="JUnit.UserMapperTest.testInsert" />
-      <item itemvalue="JUnit.UserMapperTest.testSelectAll" />
       <item itemvalue="JUnit.UserMapperTest.testInsert2" />
       <item itemvalue="JUnit.UserMapperTest.testInsert3" />
+      <item itemvalue="JUnit.UserMapperTest.testUpdateById" />
+      <item itemvalue="JUnit.UserMapperTest.testDeleteById" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testDeleteById" />
+        <item itemvalue="JUnit.UserMapperTest.testUpdateById" />
         <item itemvalue="JUnit.UserMapperTest.testInsert3" />
         <item itemvalue="JUnit.UserMapperTest.testInsert2" />
         <item itemvalue="JUnit.UserMapperTest.testInsert" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectAll" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectRoleByUserId" />
       </list>
     </recent_temporary>
   </component>
@@ -506,20 +492,11 @@
       <option name="presentableId" value="Default" />
       <updated>1537339654143</updated>
       <workItem from="1537339655478" duration="1885000" />
-      <workItem from="1537346255907" duration="8973000" />
+      <workItem from="1537346255907" duration="11845000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserMapperTest_testSelectById - 2018.09.19 at 18h 59m 37s.xml">
-      <configuration name="UserMapperTest.testSelectById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testSelectAll - 2018.09.19 at 19h 00m 10s.xml">
-      <configuration name="UserMapperTest.testSelectAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testSelectRoleByUserId - 2018.09.19 at 19h 01m 56s.xml">
-      <configuration name="UserMapperTest.testSelectRoleByUserId" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserMapperTest_testSelectAll - 2018.09.19 at 19h 02m 39s.xml">
       <configuration name="UserMapperTest.testSelectAll" configurationId="JUnit" />
     </history-entry>
@@ -541,15 +518,24 @@
     <history-entry file="UserMapperTest_testInsert2 - 2018.09.19 at 19h 13m 09s.xml">
       <configuration name="UserMapperTest.testInsert2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserMapperTest_testInsert3 - 2018.09.19 at 22h 05m 01s.xml">
+      <configuration name="UserMapperTest.testInsert3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdateById - 2018.09.20 at 10h 43m 17s.xml">
+      <configuration name="UserMapperTest.testUpdateById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testDeleteById - 2018.09.20 at 10h 57m 32s.xml">
+      <configuration name="UserMapperTest.testDeleteById" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10858000" />
+    <option name="totallyTimeSpent" value="13730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -559,7 +545,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2877551" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -774,10 +760,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="-3">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -786,18 +779,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+        <state relative-caret-position="489">
+          <caret line="201" column="19" lean-forward="true" selection-start-line="201" selection-start-column="19" selection-end-line="201" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
         </state>
       </provider>
     </entry>
